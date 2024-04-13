@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-body{
+html, body{
   overflow-x: hidden !important;
 }
 
@@ -54,6 +54,7 @@ h1{
   border: 2px solid #0b94f5;
 }
 
+
 .hero h1{
   /* font-size: 54px; */
   text-align: center;
@@ -77,12 +78,30 @@ h1{
     position: relative;
     display: block;
     overflow: hidden;
-    margin: 0 -20% 0 0 !important;
+    /* margin: 0 -10% 0 0 !important; */
     padding: 50px 0 !important;
-    height: 600px !important;
-
-    /* background-color: #0b94f5 !important; */
+    height: 560px !important;
+    background-color: #0b94f5 !important;
   }
+
+  .carousel-img {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 30px !important;
+    border-radius: 20px !important;
+    position: relative !important;
+    margin-left: 0 !important;
+    background-color: #9afee0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .carousel-img .inner-box {
+    border-radius: 20px !important;
+    height: 500px !important;
+    padding: 30px;   }
+   
+   
 }
 .carousel-img {
   display: flex !important;

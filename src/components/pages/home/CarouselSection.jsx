@@ -182,7 +182,7 @@ const CarouselSection = () => {
 
   return (
     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 md:my-20 lg:mt-44 my-10">
-      <div className="flex w-full flex-col md:flex-row md:justify-between items-start md:gap-12 lg:gap-20 my-10 lg:my-0">
+      <div className="flex w-full flex-col md:flex-row md:justify-between items-start md:gap-12 lg:gap-20 mt-10 lg:mt-0">
         <div className="max-w-3xl flex-auto">
           <p className=" display-md tracking-tight font-semibold text-lg text-center lg:text-start lg:text-3xl">
             Meet the healthcare leaders seeing fast, real ROI with Infinitus
@@ -228,7 +228,7 @@ const CarouselSection = () => {
           </Slider>
         </animated.div>
       </div>
-      <div className="custom-buttons lg:-mt-14 ms-3">
+      <div className="custom-buttons -mt-4 lg:-mt-14 lg:ms-3">
         <button onClick={() => sliderRef.current?.slickPrev()} className="arrow p-2 me-5">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
