@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+body{
+  overflow-x: hidden !important;
+}
 
 h1{
   line-height: 115% !important;
