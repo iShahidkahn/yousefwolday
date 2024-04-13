@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useSpring, animated } from 'react-spring';
+
 import Slider from "react-slick";
 // import Image from "next/image";
 // import Link from "next/link";
@@ -114,6 +116,29 @@ const CustomPrevArrow = (props) => {
 
 const CarouselSection = () => {
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          const scrollPosition = window.scrollY + window.innerHeight;
+          const sectionPosition = document.getElementById('info-section2').offsetTop;
+          const isSectionVisible = scrollPosition > sectionPosition;
+          setIsVisible(isSectionVisible);
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+
+  const headerAnimation = useSpring({
+      from: { opacity: 0, transform: 'translateY(250px)' },
+      to: { opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(250px)' },
+      config: { duration: 1200 },
+  });
+
+
   const sliderRef = useRef(null);
 
   const settings = {
@@ -169,11 +194,11 @@ const CarouselSection = () => {
         </div>
       </div>
       <div>
-        <div className="md:my-14">
-          <Slider ref={sliderRef} {...settings}>
+        <animated.div style={headerAnimation} className="md:my-14" id="info-section2">
+          <Slider ref={sliderRef} {...settings} >
             {sliderData.map((slide, index) => {
               return (
-                <div key={index} className="carousel-img ">
+                <div   key={index} className="carousel-img ">
                   {/* Image component removed */}
                   <div className="inner-box">
                     <h1 className="text-3xl">
@@ -199,7 +224,7 @@ const CarouselSection = () => {
               );
             })}
           </Slider>
-        </div>
+        </animated.div>
       </div>
       <div className="custom-buttons -mt-14 ms-3">
         <button onClick={() => sliderRef.current?.slickPrev()} className="arrow p-2 me-5">

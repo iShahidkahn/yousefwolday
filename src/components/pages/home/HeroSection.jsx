@@ -1,66 +1,81 @@
 import React from 'react'
+import { useSpring, animated } from 'react-spring';
+
 
 const HeroSection = () => {
+
+
+    const headerAnimation = useSpring({
+        from: { opacity: 0, marginTop: -100 },
+        to: { opacity: 1, marginTop: 0 },
+        config: { duration: 1000 },
+    });
+
+    const badgeAnimation = useSpring({
+        from: { opacity: 0, transform: 'translateY(-20px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { duration: 800, delay: 600 },
+    });
+
+    const buttonAnimation = useSpring({
+        from: { opacity: 0, transform: 'translateY(20px)' },
+        to: { opacity: 1, transform: 'translateY(0)' },
+        config: { duration: 800, delay: 600 },
+    });
+
+
+
     return (
-        <div className='hero flex justify-center items-center'>
-            <div className='py-2'>
-                <div className='flex justify-center my-4 mt-10 lg:my-10'>
-                    <div class="pt-0 md:pt-0 lg:pt-0 pb-0 md:pb-0 lg:pb-0  md:inline-flex">
-                        <a href="/#" target="_self" class="pl-1 pr-[10px] rounded-full py-1 bg-gray-200 items-center inline-flex">
-                            <span class="rounded-full bg-white py-[2px] px-3 text-sm leading-none md:leading-tight font-medium text-gray-900">
-                                New <i class="fa-regular fa-sparkles" aria-hidden="true"></i>
+        <section
+            className="block-centered-hero pt-28 md:pt-40 lg:pt-32 pb-5 md:pb-0 lg:pb-0 relative bg-white"
+        >
+            <div className="bg-centered-hero">
+                <video autoPlay muted loop playsInline preload="none">
+                    <source src="./gradient.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div className="container z-20 relative text-center">
+                <animated.div style={badgeAnimation}>
+                    <div className="primitive-element  primitive-element-badge relative pt-0 md:pt-0 lg:pt-0 pb-0 md:pb-0 lg:pb-0 inline-flex ">
+                        <a href="/#" target="_self" className="pl-1 pr-[10px] rounded-full py-1 bg-gray-200 items-center inline-flex">
+                            <span className="rounded-full bg-white py-[2px] px-3 text-sm leading-none md:leading-tight font-medium text-gray-900">
+                                New <i className="fa-regular fa-sparkles"></i>
                             </span>
-                            <span class="text-sm leading-[1.14] md:leading-tight font-medium ml-3 flex items-center gap-1">Key takeaways from Blizzard ’24<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                            </svg>
+                            <span className="text-sm leading-[1.14] flex items-center gap-1 md:leading-tight font-medium ml-3">
+                                Key takeaways from Blizzard
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
                             </span>
                         </a>
                     </div>
+                </animated.div>
+
+                <div className="max-w-5xl mx-auto w-full mt-6 md:mt-12">
+                    <animated.h1 style={headerAnimation} className="display-xl text-[54px] font-semibold font-lm relative">
+                        Transforming healthcare.<br /> One call at a time.
+                    </animated.h1>
                 </div>
-                <h1 className="lg:max-w-5xl mx-auto w-full mt-0 lg:mt-12 text-3xl lg:text-[54px]">
-                    Transforming healthcare. <br />
-                    One call at a time.
-                </h1>
-                <p className='text-xl pt-4 lg:pt-6 text-center pb-6 lg:pb-12'>
-                    AI that talks to insurance, PBMs, and <br className='lg:hidden' /> pharmacies so you don’t have to.
-                </p>
-                <div className='flex justify-center pb-12'>
-                    <button className='bg-black text-sm font-medium text-white border-2 hover:bg-white hover:text-black hover:border-2 border-black rounded-full py-3 px-5 duration-200'>
-                        Get in touch
-                    </button>
+                <div className="max-w-3xl mx-auto w-full md:px-2 pt-6 pb-12">
+                    <p className="text-xl tracking-bit">
+                        AI that talks to insurance, PBMs, and pharmacies so you don’t have to.
+                    </p>
                 </div>
-                <div className='pb-12 pt-16'>
-                    <p className='text-center text-lg pb-2 font-semibold'>Who we call:</p>
-                    <div className='flex gap-5 justify-center items-center'>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/bluecross-blueshied.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/bluecross-blueshied.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" class="object-contain w-auto h-32" alt="carelon logo" />
-                        </div>
-                        <div className='w-32 h-28 '>
-                            <img fetchpriority="high" width="260" height="260" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" class="object-contain w-auto h-32" alt="carelon logo" />
+
+                <animated.div style={buttonAnimation}>
+                    <div className="relative">
+                        <div className='flex justify-center pb-12'>
+                            <button className='bg-black text-sm font-medium text-white border-2 hover:bg-white hover:text-black hover:border-2 border-black rounded-full py-3 px-5 duration-200'>
+                                Get in touch
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </animated.div>
 
+             
+            </div>
+        </section>
 
     )
 }

@@ -8,6 +8,22 @@ h1{
   line-height: 115% !important;
   /* font-size: 54px; */
 }
+
+.navbar{
+  -webkit-backdrop-filter: blur(3.5px);
+  backdrop-filter: blur(3.5px);
+  background: hsla(0, 0%, 100%, 0.85);
+  border-bottom: 1px solid #f2f4f7;
+  height: 80px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 100;
+}
+
 .navbar .btn-demo {
   color: white;
   background-color: #0b94f5;
@@ -81,3 +97,181 @@ h1{
 
 
 
+
+
+
+
+.bg-centered-hero {
+  animation: fadeInAnimation 2.5s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  display: none;
+  left: 50%;
+  max-width: 1514px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  width: 130%;
+}
+@media (min-width: 768px) {
+  .bg-centered-hero {
+    display: block;
+    top: -1rem;
+    transform: translate(-50%, -20%) scale(0.8);
+    width: 1650px;
+  }
+}
+.bg-centered-hero img,
+.bg-centered-hero video {
+  height: auto;
+  width: 100%;
+}
+@keyframes fadeInAnimationMobile {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+    transform: translate(-50%) scale(1);
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%) scale(1);
+  }
+}
+.hero_gradient-button-wrapper {
+  position: relative;
+}
+.hero_gradient-button-wrapper.hover .hero_gradient-button {
+  background-color: transparent;
+  color: var(--color-gray-900);
+}
+.hero_gradient-button {
+  background-clip: padding-box;
+  background-color: var(--color-gray-900);
+  border-color: var(--color-gray-900);
+  color: #fff;
+  transition-duration: 0.15s;
+  transition-property: color, background-color, box-shadow;
+  transition-timing-function: ease;
+}
+.hero_gradient-button > span.button_content {
+  position: relative;
+  z-index: 1;
+}
+.hero_button-bg {
+  border-radius: 9999px;
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+@media (max-width: 768px) {
+  .hero_button-bg {
+    display: none;
+  }
+}
+.hero_button-bg.hero_button-bg--blue {
+  --start-color: #bfe8ff;
+  --end-color: #9afeee;
+  background-image: linear-gradient(
+    112deg,
+    var(--start-color),
+    var(--end-color)
+  );
+}
+.hero_button-bg.hero_button-bg--blue.animated {
+  animation: animation-bg-1 6s infinite;
+}
+.hero_button-bg.hero_button-bg--green {
+  --start-color: #9afee0;
+  --end-color: #fff2c2;
+  background-image: linear-gradient(
+    112deg,
+    var(--start-color),
+    var(--end-color)
+  );
+}
+.hero_button-bg.hero_button-bg--green.animated {
+  animation: animation-bg-2 6s infinite;
+}
+.hero_button-bg.hero_button-bg--orange {
+  --start-color: #ffb47d;
+  --end-color: #ff9c8f;
+  background-image: linear-gradient(
+    112deg,
+    var(--start-color),
+    var(--end-color)
+  );
+}
+.hero_button-bg.hero_button-bg--orange.animated {
+  animation: animation-bg-3 6s infinite;
+}
+.hero_button-bg.hero_button-bg--lemon {
+  --start-color: #fff0b8;
+  --end-color: #ffb47d;
+  background-image: linear-gradient(
+    112deg,
+    var(--start-color),
+    var(--end-color)
+  );
+}
+.hero_button-bg.hero_button-bg--lemon.animated {
+  animation: animation-bg-4 6s infinite;
+}
+@keyframes animation-bg-1 {
+  0%,
+  16.667%,
+  to {
+    opacity: 1;
+  }
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
+@keyframes animation-bg-2 {
+  0%,
+  16.667%,
+  66.667%,
+  to {
+    opacity: 0;
+  }
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes animation-bg-3 {
+  0%,
+  50%,
+  to {
+    opacity: 0;
+  }
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
+@keyframes animation-bg-4 {
+  0%,
+  33.333%,
+  66.667%,
+  to {
+    opacity: 0;
+  }
+  50%,
+  83.333% {
+    opacity: 1;
+  }
+}

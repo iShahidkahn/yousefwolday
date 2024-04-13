@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const Navbar = () => {
     return (
-        <Disclosure as="nav" className="border-b navbar">
+        <Disclosure as="nav" className="border-b navbar fixed z-50 w-full bg-white bg-opacity-90 bg-blend-color-burn">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
