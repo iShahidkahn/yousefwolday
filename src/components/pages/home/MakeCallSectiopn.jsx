@@ -3,7 +3,7 @@ import React from 'react'
 const MakeCallSectiopn = () => {
     return (
         <div className=" text-center make-call mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 md:my-20 my-10" >
-            <div className="shadow-md bg-gray-50 border rounded-[20px] lg:rounded-full overflow-hidden mx-3 px-6 md:px-16 lg:px-4 pt-10 md:pt-14 pb-10 md:pb-14">
+            <div className="shadow-md bg-gray-50 border rounded-[20px] lg:rounded-full overflow-hidden px-6 md:px-16 lg:px-4 pt-10 md:pt-14 pb-10 md:pb-14">
                 <div className="mb-5">
                     <h2 className="mx-0 pb-0 display-lm font-semibold text-xl lg:text-4xl font-sans max-w-3xl normal-case text-left md:text-center md:mx-auto">
                         Make one call to change it all.

@@ -81,6 +81,7 @@ h1{
     margin: 0 !important;
     padding: 50px 0 !important;
     height: 560px !important;
+
   }
 
   .carousel-img {
@@ -89,7 +90,7 @@ h1{
     justify-content: center !important;
     border-radius: 20px !important;
     position: relative !important;
-    margin-left: 8px !important;
+    margin-left: 12px !important;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
   }
 
@@ -106,15 +107,16 @@ h1{
   max-width: 370px !important;
   border-radius: 20px !important;
   position: relative !important;
-  margin-left: 15px;
+  margin: 0 auto 15px auto !important; /* Updated margin */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .carousel-img .inner-box {
- border-radius: 20px !important;
- height: 500px !important;
- padding: 30px;
+  border-radius: 20px !important;
+  height: 500px !important;
+  padding: 30px;
 }
+
 
 
 .bg-centered-hero {
