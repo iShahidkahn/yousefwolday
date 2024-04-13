@@ -189,8 +189,8 @@ const CarouselSection = () => {
           </p>
         </div>
         <div className="flex w-full md:w-auto mt-6 md:mt-0 flex-col  md:flex-row gap-3 items-center">
-          <a className="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black font-bold hover:bg-black hover:text-white duration-200"><span>See customer stories</span></a>
-          <a className="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black bg-black text-white font-bold hover:bg-white hover:border-black hover:text-black duration-200">
+          <a href="/#" className="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black font-bold hover:bg-black hover:text-white duration-200"><span>See customer stories</span></a>
+          <a href="/#" className="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black bg-black text-white font-bold hover:bg-white hover:border-black hover:text-black duration-200">
             See for yourself
           </a>
         </div>

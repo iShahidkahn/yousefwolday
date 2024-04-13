@@ -1,9 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring';
 
-
 const HeroSection = () => {
-
 
     const headerAnimation = useSpring({
         from: { opacity: 0, marginTop: -100 },
