@@ -26,7 +26,7 @@ const Navbar = () => {
                                     <h1 className=' text-lg ms-1  lg:ms-0 lg:text-xl font-medium'>Logo Brand</h1>
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
-                                    <div className="flex space-x-4 ms-0 lg:ms-8">
+                                    <div className="flex space-x-4 ms-0 lg:ms-20">
                                         <a href='/#' className='text-gray-900 px-3 py-2 font-medium  cursor-pointer hover:text-sky-600'>
                                             Home
                                         </a>
