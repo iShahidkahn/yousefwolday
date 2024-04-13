@@ -155,7 +155,7 @@ const CarouselSection = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -164,7 +164,7 @@ const CarouselSection = () => {
         breakpoint: 822,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -173,6 +173,8 @@ const CarouselSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+
         },
       },
     ],
@@ -180,15 +182,15 @@ const CarouselSection = () => {
 
   return (
     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 md:my-20 lg:mt-44 my-10">
-      <div class="flex w-full flex-col md:flex-row md:justify-between items-start md:gap-12 lg:gap-20 my-10 lg:my-0">
-        <div class="max-w-3xl flex-auto">
-          <p class=" display-md tracking-tight font-semibold text-lg text-center lg:text-start lg:text-3xl">
+      <div className="flex w-full flex-col md:flex-row md:justify-between items-start md:gap-12 lg:gap-20 my-10 lg:my-0">
+        <div className="max-w-3xl flex-auto">
+          <p className=" display-md tracking-tight font-semibold text-lg text-center lg:text-start lg:text-3xl">
             Meet the healthcare leaders seeing fast, real ROI with Infinitus
           </p>
         </div>
-        <div class="flex w-full md:w-auto mt-6 md:mt-0 flex-col  md:flex-row gap-3 items-center">
-          <a class="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black font-bold hover:bg-black hover:text-white duration-200"><span>See customer stories</span></a>
-          <a class="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black bg-black text-white font-bold hover:bg-white hover:border-black hover:text-black duration-200">
+        <div className="flex w-full md:w-auto mt-6 md:mt-0 flex-col  md:flex-row gap-3 items-center">
+          <a className="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black font-bold hover:bg-black hover:text-white duration-200"><span>See customer stories</span></a>
+          <a className="border-2 py-2 px-3 text-sm w-[200px] rounded-full text-center cursor-pointer border-black bg-black text-white font-bold hover:bg-white hover:border-black hover:text-black duration-200">
             See for yourself
           </a>
         </div>
@@ -207,16 +209,16 @@ const CarouselSection = () => {
                     <p className="my-10 ">
                       {slide.info}
                     </p>
-                    <p class="font-bold font-sans">
+                    <p className="font-bold font-sans">
                       {slide.name}
                     </p>
-                    <p class="text-base md:text-lg font-medium font-sans">
+                    <p className="text-base md:text-lg font-medium font-sans">
                       {slide.profile}
                     </p>
                   </div>
                   <div>
-                    <div class="absolute w-20 md:w-28 h-20 md:h-28 -top-5 md:-top-8 right-4 md:right-6">
-                      <img decoding="async" width="224" height="224" src={slide.image} data-spai="1" class="testimonial-photo testimonial-photo--static w-full h-full object-cover rounded-full shadow-lg" alt="Jeff Buck of Cencora" data-spai-orig-obs="true" data-spai-lazy-loaded="true" data-spai-width="112" data-spai-height="112" />
+                    <div className="absolute w-20 md:w-28 h-20 md:h-28 -top-5 md:-top-8 right-4 md:right-6">
+                      <img decoding="async" width="224" height="224" src={slide.image} data-spai="1" className="testimonial-photo testimonial-photo--static w-full h-full object-cover rounded-full shadow-lg" alt="Jeff Buck of Cencora" data-spai-orig-obs="true" data-spai-lazy-loaded="true" data-spai-width="112" data-spai-height="112" />
                     </div>
                     <img src="" alt="" />
                   </div>
@@ -226,7 +228,7 @@ const CarouselSection = () => {
           </Slider>
         </animated.div>
       </div>
-      <div className="custom-buttons -mt-14 ms-3">
+      <div className="custom-buttons lg:-mt-14 ms-3">
         <button onClick={() => sliderRef.current?.slickPrev()} className="arrow p-2 me-5">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />

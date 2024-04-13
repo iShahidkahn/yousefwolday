@@ -98,7 +98,7 @@ const Navbar = () => {
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 px-2 pb-3 pt-2">
+                        <div className="space-y-1 px-2 pb-3 shadow-lg pt-2 bg-white">
                             <a href='/#' className='text-gray-900 px-3 py-2 font-medium block  cursor-pointer hover:text-sky-600'>
                                 Home
                             </a>

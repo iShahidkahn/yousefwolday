@@ -23,8 +23,6 @@ const HeroSection = () => {
         config: { duration: 800, delay: 600 },
     });
 
-
-
     return (
         <section
             className="block-centered-hero pt-28 md:pt-40 lg:pt-32 pb-5 md:pb-0 lg:pb-0 relative bg-white"

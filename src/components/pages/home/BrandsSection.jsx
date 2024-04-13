@@ -8,28 +8,28 @@ const BrandsSection = () => {
             </p>
             <div className='flex gap-5 justify-center items-center'>
                 <div className='lg:w-32 h-28'>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28 '>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28'>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/bluecross-blueshied.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/bluecross-blueshied.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28 '>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28 '>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28 '>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/bluecross-blueshied.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/bluecross-blueshied.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28 '>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/06/CompanyCarelonRx-Typefull-mark-OrientationSquare-ColorBlack@2x.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
                 <div className='w-32 h-28 '>
-                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" class="object-contain w-auto h-32" alt="carelon logo" />
+                    <img fetchpriority="high" src="https://cdn.shortpixel.ai/spai/q_lossy+w_128+to_webp+ret_img/www.infinitus.ai/wp-content/uploads/2023/05/united-healthcare.png" className="object-contain w-auto h-32" alt="carelon logo" />
                 </div>
             </div>
         </div>
