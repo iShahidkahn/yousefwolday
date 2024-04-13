@@ -31,7 +31,7 @@ const InfoSection = () => {
     });
 
     return (
-        <div id="info-section" className='bg-gray-900 py-20 h-[640px] px-3 lg:px-0 relative mt-40'>
+        <div id="info-section" className='bg-gray-900 py-20 min-h-[640px] px-3 lg:px-0 relative mt-6 lg:mt-40'>
             <div className='lg:grid grid-cols-2 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
                 <div className='col-span-1'>
                     <animated.h1 style={headerAnimation} className='text-white font-semibold text-5xl lg:text-[54px]'>

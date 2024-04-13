@@ -179,7 +179,7 @@ const CarouselSection = () => {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 md:my-20 my-10">
+    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 md:my-20 lg:mt-44 my-10">
       <div class="flex w-full flex-col md:flex-row md:justify-between items-start md:gap-12 lg:gap-20 my-10 lg:my-0">
         <div class="max-w-3xl flex-auto">
           <p class=" display-md tracking-tight font-semibold text-lg text-center lg:text-start lg:text-3xl">
